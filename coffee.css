@@ -1,0 +1,377 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4a2c1d;
+  }
+
+
+  
+  h1 {
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  
+  
+  .established {
+    font-style: italic;
+  }
+  
+  h1, h2, p {
+    text-align: center;
+  }
+  
+  .menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+  }
+  
+  .bottom-line {
+    margin-top: 25px;
+  }
+  
+  h1, h2 {
+    font-family: Impact, serif;
+  }
+  
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 25%;
+  }
+  
+
+  
+  /* FOOTER */
+  
+  footer {
+    font-size: 14px;
+  }
+  
+  .address {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color: brown;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .favicon {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.favicon {
+    text-align: center;
+}
+
+.favicon a {
+    margin: 0 10px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 130px; 
+}
+.logo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50px; 
+}
+.logo2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50px; 
+}
+.logo3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50px; 
+}
+.logo4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50px; 
+}
+.logo5 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50px; 
+}
+.logo6 {
+  display: left;
+  max-width: 30px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+
+.logo7 {
+  display: left;
+  max-width: 30px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.logo8 {
+  display: left;
+  max-width: 30px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.pg{
+  text-align: center;
+  font-style:  serif;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.header {
+    text-align: center;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    z-index: 9999;
+  }
+  .popup img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+ /* #ad-container {
+    min-width: 200px;
+    transition: all 0.3s ease;
+  }
+
+
+  .ad-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+  } 
+  */
+
+  .BorderColorChangeElement {
+    animation: BorderColorChange 1s ease-out 0s infinite alternate none running;
+  }
+  @keyframes BorderColorChange{
+    0%  { border: 10px solid burlywood;}
+    100%  { border: 10px solid black;}
+  }
+  @keyframes scaler {
+  0% {
+    transform: scale(1);
+  }
+  100% {    transform: scale(1.5);
+  }
+  }
+  @keyframes colorChange{
+  0%  { color: #8BC34A;}
+  25%  { color: #03A9F4;}
+  50%  { color: #FF5722;}
+  100%{ color: #607D8B;}
+  }
+  .imgAnim931 {
+  animation: scaler 8.9s linear 0s infinite alternate none running;
+  }
+  .descAnim931 {
+  animation: colorChange 1s ease-out 0s infinite alternate none running;
+  }
+  .btnAnim931 {
+  animation: scaler 1s linear 0s infinite alternate none running;
+  }
+  .btnAnim931:hover{
+  animation-play-state: paused;
+  }
+  .j4{
+    max-width:100%;width:80px
+  }
+  .imgAnim931{
+    display: block;position:relative;padding:8px
+  }
+  
+  .BorderColorChangeElement{
+    margin: 0 auto;
+    text-align:center;
+    overflow:hidden;
+    border-radius:0px;
+    -webkit-box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);
+    -moz-box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);
+    box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);
+    background-image: url('nik.jpg');
+    border:10px solid #000000;
+    padding:8px;
+    max-width:calc(100% - 48px);
+    width:700px
+  }
+  
+  .j{
+    display:inline-block;
+    text-shadow:#030303 4px 4px 4px;
+    position:relative;
+    vertical-align: middle;
+    padding:8px;font-size:50px;
+    color:#ffffff;
+    font-weight:normale
+  }
+  
+  .descAnim931{
+    display:inline-block;
+    text-shadow:#dbdbdb 4px 4px 4px;
+    position:relative;
+    vertical-align: middle;
+    padding:8px;
+    font-size:14px;
+    color:#ffffff;
+    font-weight:bold
+  }
+  
+  .btnAnim931{
+    display:inline-block;
+    position:relative;
+    vertical-align: middle;
+    padding:6px
+  }
+
+  .clos {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+ 
+ /* .button{
+    margin:0px;
+    background:#000000;
+    padding:6px;
+    border:2px solid red;
+    color:#ffffff;
+    border-radius:2px;
+    cursor:pointer
+  }
+  */

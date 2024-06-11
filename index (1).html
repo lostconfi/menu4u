@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu4U</title>
+    <link href="coffee.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <body>
+
+    <div class="popup" id="popup">
+        <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+        <a href="https://www.propertyaccess.ph" target="_buy property">
+            <img src="Buy your dream house with Real Estate.jpg" alt="Popup Image">
+        </a>
+    </div>
+    <button onclick="document.getElementById('popup').style.display='block'">Open Ads</button>
+    <script>
+        setTimeout(function() {
+            document.getElementById('popup').style.display = 'block';
+        }, 10000); // 10000ms = 10 seconds
+    </script>
+
+    <div class="menu">
+      <main>
+        <img class="logo" src="coffee_shop-removebg-preview.png" alt="MENU4YOU">
+        <h1 class="header">MENU 4 YOU</h1>
+        <img class="logo1" src="coffee-beans.png" alt="beans icon">
+        <p class="established">Est. 2024</p>
+        <hr>
+        <section>
+          <h2>HOT COFFEE</h2>
+          <img class="logo1"   src="coffee-cup.png" alt="coffee icon"/>
+          <article class="item">
+            <p class="flavor">SPANISH LATTE</p><p class="price">55.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">MOCHA LATTE</p><p class="price">65.00</p>
+          <article class="item">
+          </article>
+        </section>
+        
+
+        <section>
+            <h2> ICE COFFEE</h2>
+            <img class="logo2" src="cold-coffee.png" alt="coffee icon"/>
+            
+            <article class="item">
+              <p class="flavor">CARAMEL MACCHIATO</p><p class="price">55.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor">SPANISH LATTE</p><p class="price">65.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor">HAZELNUT LATTE</p><p class="price">70.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor">SALTED CARAMEL</p><p class="price">60.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor">STRAWBERRY LATTE</p><p class="price">50.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor">WHITE MOCHA LATTE</p><p class="price">50.00</p>
+            </article>
+          </section>
+
+          <div class="ad-container" id="adContainer">
+            <a href="http://www.booking.com" target="_book resort">
+              <img src="palawan.jpg" alt="Advertisement">
+            </a>
+            <button id="skipButton">Skip Ad</button>
+            <span id="countdown"></span>
+          </div>
+          
+          <script>
+            const adContainer = document.getElementById('adContainer');
+            const skipButton = document.getElementById('skipButton');
+            const countdown = document.getElementById('countdown');
+            
+            let timeLeft = 5;
+            countdown.textContent = `Skip in ${timeLeft} seconds`;
+          
+            const countdownTimer = setInterval(() => {
+              timeLeft--;
+              countdown.textContent = `Skip in ${timeLeft} seconds`;
+              
+              if (timeLeft === 0) {
+                clearInterval(countdownTimer);
+                adContainer.style.display = 'none';
+              }
+            }, 1000);
+          
+            skipButton.addEventListener('click', () => {
+              clearInterval(countdownTimer);
+              adContainer.style.display = 'none';
+            });
+          </script>
+<section>
+  <h2>NON-COFFEE</h2>
+  <img class="logo5" src="ice-coffee.png" alt="coffee icon"/>
+  <article class="item">
+    <p class="flavor">MILKY STRAWBERRY</p><p class="price">55.00</p>
+  </article>
+  <article class="item">
+    <p class="flavor">STRAWBERRY MATCHA</p><p class="price">65.00</p>
+  </article>
+  <article class="item">
+    <p class="flavor">CHOCOLATE FLOAT</p><p class="price">70.00</p>
+  </article>
+  <article class="item">
+    <p class="flavor">MILKY MATCHA</p><p class="price">60.00</p>
+  </article>
+</section>
+
+<section>
+  <h2>FRAPPE</h2>
+  <img class="logo3" src="frappe.png" alt="coffee icon"/>
+  <article class="item">
+    <p class="flavor">MANGO GRAHAM</p><p class="price">55.00</p>
+  </article>
+  <article class="item">
+    <p class="flavor">JAVA CHIP</p><p class="price">65.00</p>
+  </article>
+  <article class="item">
+    <p class="flavor">VANILLA MATCHA</p><p class="price">70.00</p>
+  </article>
+  <article class="item">
+    <p class="flavor">STRAWBERRY</p><p class="price">60.00</p>
+  </article>
+</section>
+
+
+        <section>
+          <h2>CROFFLES</h2>
+          <img class="logo4" src="croffle.png" alt="croffle icon"/>
+          <article class="item">
+            <p class="dessert">PLAIN</p><p class="price">30.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">NUTELLA</p><p class="price">45.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">COOKIES AND CREAM</p><p class="price">30.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">CREAMY STRAWBERRY</p><p class="price">55.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">CREAMY MATCHA</p><p class="price">30.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">NUTELLA ALMOND</p><p class="price">55.50</p>
+          </article>
+        </section>
+
+
+        <section>
+          <h2>ADD ONS</h2>
+          <article class="item">
+            <p class="flavor">SAUCE</p><p class="price">55.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">SUGAR</p><p class="price">65.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">EXPRESSO SHOT</p><p class="price">70.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">MILK</p><p class="price">60.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">ALMOND MILK</p><p class="price">70.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">ICED CREAM</p><p class="price">60.00</p>
+          </article>
+        </section>
+
+
+
+
+        <footer>
+        <section>
+                    <h2>About Us</h2>
+          
+           <img class="logo6" src="coding.png" alt="icon"/>  
+           <p class="pg">TALA</p>
+          
+           <img class="logo7" src="interface.png" alt="icon"/>  
+           <p class="pg">ROMULO</p>
+
+            <img class="logo8" src="character-design.png" alt="icon"/> 
+            <p class="pg">FERNANDEZ & VIDALLON</p>
+          
+        </section>
+      </footer>
+
+      </main>
+      <hr class="bottom-line">
+      <footer>
+        <p>
+          <a href="" target="_blank"> <p>&copy; 2023 Coffee Website. All Rights Reserved.</p></a>
+        </p>
+    <div class = "favicon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+   
+
+      <div class="BorderColorChangeElement">
+        <div class="imgAnim931">
+          <img class="j4" src="j4.jpg" alt="jordan"/>
+        </div>
+        <div class="j">JORDAN4</div>
+        <div class="descAnim931">Check the nike store now we have a 80% of discount</div>
+        <div class="btnAnim931" >
+          <a target="_blank" href="https://www.nike.com"><input type="button" value="BUY NOW"></a></div>
+      </div>
+  
+  </footer>
+  </body>
+</html>
+ 
